@@ -81,6 +81,10 @@ body{
     background-color: rgb(59, 59, 209);
 }
 
+.size-100{
+    font-size: 100px;
+}
+
 /* LAYOUT CLASSES */
 .content{
     border: 2px dashed black;
