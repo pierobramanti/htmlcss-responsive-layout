@@ -29,8 +29,16 @@ body{
     padding: 20px 20px 0 20px;
 }
 
+.padding-30{
+    padding: 30px 30px;
+}
+
 .flex{
     display: flex;
+}
+
+.line-height{
+    line-height: 30px;
 }
 
 .align-items-center{
@@ -70,6 +78,10 @@ body{
 .color-violet{
     color: #9593E6;;
 }
+
+.color-lightorange{
+    color: rgb(236, 165, 11);
+}
 .bg-color-lightblue{
    background-color: rgb(107, 190, 245); 
 }
@@ -88,6 +100,9 @@ body{
 .bg-color-blue{
     background-color: rgb(59, 59, 209);
 }
+.size-50{
+    font-size: 50px;
+}
 
 .size-100{
     font-size: 100px;
@@ -95,7 +110,7 @@ body{
 
 /* LAYOUT CLASSES */
 .content{
-    border: 2px dashed black;
+    
 }
 
 .container {
@@ -108,17 +123,16 @@ body{
 }
 
 .col-header{
-    border: 1px dashed black;
+   
 }
 
 .col-50{
     width: 50%;
-    border: 1px dashed black;
+    
 }
 
 .col-100{
-    border: 1px dashed black;
-    height: 650px;
+    
 }
 
 /* CONTENTS SECTION */
@@ -136,9 +150,14 @@ body{
 }
 
 .pic-testimonial img{
-    width: 220px;
+    width: 200px;
     height: 200px;
     border-radius: 50%;
+    object-fit: cover;    
+}
+
+.first-button{
+    width: 45px;
     
 }
 
@@ -147,10 +166,10 @@ body{
 
 @media screen and ( max-width: 480px) {
 
-
     .content-h{
         display: flex; 
     }
+
 
     .col-header{
         width: 50%;
@@ -159,6 +178,7 @@ body{
     .col-100{
         width: 100%;
         display: flex;
+        margin: 20px;
     }
 
     .col-mb-100{
@@ -171,4 +191,6 @@ body{
         margin: auto;
         width: 75%;   
     }
+
+   
 }
