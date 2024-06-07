@@ -11,7 +11,15 @@ body{
 }
 
 
+
 /* UTILITIES */
+.mg-0{
+    margin: 0 auto;
+}
+
+.mg-top-30{
+    margin-top: 30px;
+}
 
 .margin-10{
     margin: 10px 10px;
@@ -37,6 +45,10 @@ body{
     display: flex;
 }
 
+.column{
+    flex-direction: column;
+}
+
 .line-height{
     line-height: 30px;
 }
@@ -51,6 +63,11 @@ body{
 .start{
     justify-content: flex-start;
 }
+
+.center{
+    justify-content: center;
+}
+
 
 .text-align-center{
     text-align: center;
@@ -108,10 +125,13 @@ body{
     font-size: 100px;
 }
 
-/* LAYOUT CLASSES */
-.content{
+.absolute{
+    position: absolute;
     
 }
+
+/* LAYOUT CLASSES */
+
 
 .container {
     width: 100%;
@@ -123,17 +143,13 @@ body{
 }
 
 .col-header{
-   
+    width: 50%;}
+ 
+.col-100 {
+    width: 100%;
+
 }
 
-.col-50{
-    width: 50%;
-    
-}
-
-.col-100{
-    
-}
 
 /* CONTENTS SECTION */
 
@@ -149,6 +165,10 @@ body{
     width: 20px;
 }
 
+.strategic-plan img{
+    width: 100%;
+}
+
 .pic-testimonial img{
     width: 200px;
     height: 200px;
@@ -157,40 +177,83 @@ body{
 }
 
 .first-button{
-    width: 45px;
+    font-size: 20px;
+    padding: 10px 50px;
     
 }
 
+.last-button{
+    padding: 20px 50px;
+    font-size: 20px;
+    color: rgb(170, 167, 167);
+}
+
+
 
 /* QUEERY SECTION */
+@media screen and ( min-width: 480px){
 
-@media screen and ( max-width: 480px) {
 
-    .content-h{
-        display: flex; 
+    .testimonial{
+        text-align: center;
+    }
+}
+
+@media screen and ( min-width: 768px){
+    
+    .col-tb-66{
+        width: calc((100%/ 3) * 2);
     }
 
+    .col-tb-33{
+        width: calc(100% / 3) ;
+        
+    }
 
-    .col-header{
+    .col-tb-50{
         width: 50%;
     }
-   
-    .col-100{
-        width: 100%;
-        display: flex;
-        margin: 20px;
+
+    .mg-0{
+        margin: 0 10px;
     }
 
-    .col-mb-100{
-        width: 100%;
-    }
-
-    .content{
+    .testimonial{
         display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 75%;   
+        text-align: left;
     }
 
    
+      
 }
+
+@media screen and (min-width: 1200px) {
+
+    
+    .row-flex{
+        display: flex;
+    }
+
+    .col-dsk-30{
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    .col-dsk-20{
+        width: 30%;
+        margin: 0 auto; 
+        position: relative;
+
+    }
+
+    .col-dsk-33{
+        width: calc(100%/3);
+    }
+
+
+
+
+}
+
+    
+
