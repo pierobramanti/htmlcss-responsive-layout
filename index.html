@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
 </head>
 <body>
  <!-- HEADER -->
-   <header>
-        <div class="container bg-color-blue">
+   <header class="bg-color-blue">
+        <div class="container-h">
             <div class="row">
                 <div class="col-header flex start padding-20">
                     <div class="content-h flex align-items-center">
@@ -23,6 +23,13 @@
                 </div>
                 <div class="col-header flex end padding-20">
                     <div class="content-h flex align-items-center">
+                        <div class="menu">
+                            <p><a href="">Planning</a></p>
+                            <p><a href="">Testimonials</a></p>
+                            <p><a href="">Features</a></p>
+                            <p><a href="">About Us</a></p>
+                            <button class="bg-color-white br-radius-50 padding-10"> Get Started </button>
+                        </div>
                         <i class="fa-solid fa-bars color-white"></i>
                     </div>
                 </div>
@@ -33,14 +40,14 @@
    <main>
     <div class="container">
         <div class="row padding-20">
-            <div class="col-100 col-tb-66 mg-top-30 ">
-                <div class="content br-radius-10 bg-color-lightblue padding-20-20-0-20 mg-0">
-                    <div class="col-50 mg-0">
+            <div class="col-100 col-tb-66 col-dsk-66 mg-top-30 ">
+                <div class="content  content-dsk br-radius-10 bg-color-lightblue padding-20-20-0-20 mg-0">
+                    <div class="col-50 mg-0 padding-10">
                         <h2 class="margin-10 color-blue"> Get a demo application</h2>
                         <p class="margin-10 line-height" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, quis soluta! Laboriosam omnis corrupti, aliquam, sequi minima porro nobis eligendi.</p>
-                        <button class=" color-white br-radius-50 bg-color-blue padding-10 margin-10"><i class="fa-brands fa-apple"></i> <span class="margin-10"> App Store</span></button>
+                        <button class=" color-white br-radius-50 bg-color-blue padding-20"><i class="fa-brands fa-apple"></i> <span class="margin-10"> App Store</span></button>
                     </div>
-                    <div class="col-50 mg-0">
+                    <div class="col-50 mg-0 padding-10">
                         <img src="./img/phone.png" alt="">
                     </div>
                 </div>
@@ -98,11 +105,11 @@
                     </div>
                 </div>
                 <div class="col-100 col-dsk-20 mg-top-30">
-                    <div class="content strategic-plan br-radius-10 bg-color-white text-align-center mg-0">
+                    <div class="content strategic-plan strategic-plan-absolute bg-color-white text-align-center mg-0 br-radius-30">
                         <img src="./img/planning2.png" alt="Planning2">
                         <h3 class="margin-10">App Development</h3>
                         <p class="margin-10 line-height"><em>Develop an on-demand app for your delivery business to reach your targeted customers without any interruption.</em></p>
-                        <button class=" bg-color-violet br-radius-10 margin-10">
+                        <button class=" bg-color-violet br-radius-50 margin-10 padding-10">
                             <i class="fa-solid fa-arrow-down"></i>
                         </button>
                     </div>
@@ -226,10 +233,11 @@
             <div class="col-100 col-tb-50 mg-top-30">
                 <div class="content padding-30 mg-0">
                     <h2 class="color-violet margin-10 size-50">About Us</h2>
-                    <p class="line-height margin-10">Sample text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, illo maiores
+                    <p class="line-height margin-10 padding-20">Sample text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, illo maiores
                         maxime eveniet quia repellat fugit, repellendus eum consequatur doloribus nisi, deserunt
                         quos perspiciatis dolores ipsum ea quibusdam officiis voluptatibus!</p>
-                    <p class="line-height margin-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui cumque a voluptatibus quidem at voluptas deleniti, ea quaerat dolores eveniet aut nam officiis in totam. Magnam rerum
+                        <br>
+                    <p class="line-height margin-10 padding-20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui cumque a voluptatibus quidem at voluptas deleniti, ea quaerat dolores eveniet aut nam officiis in totam. Magnam rerum
                         quaerat quis nisi vitae cupiditate debitis quidem sit, minima quibusdam inventore eum, hic
                         dolore velit molestias nihil odio tempora necessitatibus!</p>
                 </div>
@@ -237,10 +245,10 @@
             <div class="col-100 col-tb-50 mg-top-30">
                 <div class="content padding-20 mg-0">
                     <div class="pic-testimonial margin-10">
-                        <img src="./img/about.jpg" alt="About"><i class="fa-solid fa-quote-left color-violet size-100 absolute"></i>
-                        <h2 class="color-violet margin-10">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</h2>
-                        <button class=" bg-color-violet br-radius-50 color-white margin-10 padding-10">
-                            <i class="fa-brands fa-linkedin "></i>Find me on linkedin
+                        <img src="./img/about.jpg" alt="About"><i class="fa-solid fa-quote-left color-violet size-100 quote-absolute"></i>
+                        <h2 class="color-violet margin-10 line-height">I help companies tincidunt tortor aliquam nulla facilisi cras fermentum odio.</h2>
+                        <button class=" bg-color-violet br-radius-50 color-white padding-10 ">
+                            <i class="fa-brands fa-linkedin"></i>Find me on linkedin
                         </button>
                     </div>
                 </div>
@@ -257,7 +265,7 @@
                         <span class="color-lightorange size-50">It's Free!</span>
                         <p  class="color-white  margin-10 line-height">We're still in beta and we will be for awhile. As we add more functionality, we'll look
                             into other plans with more controls.</p>
-                        <button class="last-button br-radius-50 bg-color-white" >Get Started</button>
+                        <button class="last-button br-radius-50 bg-color-white margin-10" >Get Started</button>
                         <p class="color-white margin-10">Copyright 2021 Boolean <i class="fa-solid fa-circle"></i> Classe XX <i class="fa-solid fa-circle"></i> <a href="#">Privacy policy</a></p>
                     </div>
                 </div>

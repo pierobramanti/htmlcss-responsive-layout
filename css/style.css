@@ -81,6 +81,10 @@ body{
     border-radius: 10px;
 }
 
+.br-radius-30{
+    border-radius: 30px;
+}
+
 .br-radius-50 {
     border-radius: 50px;
 }
@@ -125,9 +129,10 @@ body{
     font-size: 100px;
 }
 
-.absolute{
+.quote-absolute{
     position: absolute;
     
+
 }
 
 /* LAYOUT CLASSES */
@@ -137,6 +142,7 @@ body{
     width: 100%;
 }
 
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -145,10 +151,16 @@ body{
 .col-header{
     width: 50%;}
  
+.col-50{
+    width: 50% ;
+}
+
 .col-100 {
     width: 100%;
 
 }
+
+
 
 
 /* CONTENTS SECTION */
@@ -188,7 +200,9 @@ body{
     color: rgb(170, 167, 167);
 }
 
-
+.menu{
+    display: none;
+}
 
 /* QUEERY SECTION */
 @media screen and ( min-width: 480px){
@@ -197,6 +211,8 @@ body{
     .testimonial{
         text-align: center;
     }
+
+ 
 }
 
 @media screen and ( min-width: 768px){
@@ -222,13 +238,59 @@ body{
         display: flex;
         text-align: left;
     }
-
-   
       
 }
 
-@media screen and (min-width: 1200px) {
 
+
+@media screen and (min-width: 1200px) {
+    
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container-h{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .col-header{
+        width: 50%;
+        
+   }
+    .menu{
+    display: flex;}
+ 
+
+   .menu p{
+    margin: 10px 10px;
+   }
+
+   .menu a{
+    text-decoration: none;
+    color: white;
+   }
+
+   .content-h i{
+    height: 0; 
+    width: 0;
+    overflow: hidden;
+   }
+
+    .col-tb-66{
+        width: calc((100%/ 3) * 2);   
+    
+    }
+
+    .content-dsk{
+        display: flex;
+    }
+    
+
+    .col-dsk-50{
+        width: 50%;
+    }
     
     .row-flex{
         display: flex;
@@ -250,9 +312,10 @@ body{
         width: calc(100%/3);
     }
 
-
-
-
+    .strategic-plan-absolute{
+        position: absolute;
+        bottom: 2px;
+    }
 }
 
     
